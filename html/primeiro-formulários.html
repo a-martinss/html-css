@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exemplo de Formuário</title>
+		<script type="text/javascript" src="validacao.js"></script>
+	</head>
+	<body>
+		<h1>Formulário de Contato</h1>
+			<form name="contato" action="contato.asp" method="post" onsubmit="retum validar();">
+				<table border="0" width="600">
+					<tr>
+						<td width="90">Nome:</td>
+						<td><label><input type="text" name="nome" size="50" maxlength="100" /></label></td>
+					</tr>
+					<tr>
+						<td>Telefone:</td>
+						<td><label><input type="text" name="telefone" size="14" maxlength="14" /></label></td>
+					</tr>
+					<tr>
+						<td>E-mail:</td>
+						<td><label><input type="text" name="email" size="50" maxlength="30" /></label></td>
+					</tr>
+					<tr>
+						<td>Assunto:</td>
+						<td><label><select name="assunto">
+							<option value=""selected="selected"></option>
+							<option value="Contato">Contato</option>
+							<option value="Dúvida">Dúvida</option>
+							<option value="Sugestão">Sugestão</option>
+							<option value="Reclamação">Reclamação</option></select></label>
+						</td>
+					</tr>
+					<tr>
+						<td>Sexo:</td>
+						<td><label><input type="radio" name="sexo" value="Masculino" checked="checked" />Masculino</label>
+							<label><input type="radio" name="sexo" value="Feminino" />Feminino</label>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">Mensagem:</td>
+						<td><label><textarea name="mensagem" cols="40" rows="5"></textarea></label>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>
+							<button type="submit">Enviar</button>
+							<button type="reset">Limpar</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+	</body>
+</html>
